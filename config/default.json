@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://arsh_2023:arsh_2023@devconnector.xq2yfi0.mongodb.net/?retryWrites=true&w=majority"
+    "mongoURI" : "mongodb+srv://arsh_2023:arsh_2023@devconnector.xq2yfi0.mongodb.net/?retryWrites=true&w=majority",
+    "jwtToken": "mysecrettoken"
 }
