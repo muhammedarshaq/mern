@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas fa-code"></i> DevConnector
+          <i className="fas fa-code"></i> DevHive
         </Link>
       </h1>
       <ul>

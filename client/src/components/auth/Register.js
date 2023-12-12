@@ -1,7 +1,9 @@
 import React, { Fragment, useState } from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { setAlert } from "../../actions/alert";
 
-export const Register = () => {
+export const Register = (props) => {
   // Using the hook to take form data as an object
   const [formData, setFormData] = useState({
     name: "",
@@ -22,8 +24,9 @@ export const Register = () => {
     e.preventDefault();
 
     if (password !== password2) {
-      console.log("Passwords don't match!");
+      props.setAlert("Password don't match", "danger");
     } else {
+      console.log("Success");
       /* This piece of code should be written on react redux, not in the component
         // Create new user
       const newUser = {
@@ -112,3 +115,5 @@ export const Register = () => {
     </Fragment>
   );
 };
+
+export default connect(null, { setAlert })(Register);
